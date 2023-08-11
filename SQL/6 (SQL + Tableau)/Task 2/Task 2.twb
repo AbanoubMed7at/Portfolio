@@ -1,0 +1,352 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.20.0125.0835                               -->
+<workbook original-version='18.1' source-build='2019.4.3 (20194.20.0125.0835)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Task 2' inline='true' name='federated.0yglsdq1by9i3c1bewapk05m0l0v' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Task 2' name='textscan.0770lw910rlesu127vzhz1sspk41'>
+            <connection class='textscan' directory='A:/Career/Business Analyst/SQL/6 (SQL + Tableau)/Task 2' filename='Task 2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0770lw910rlesu127vzhz1sspk41' name='Task 2.csv' table='[Task 2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='dept_name' ordinal='0' />
+            <column datatype='string' name='gender' ordinal='1' />
+            <column datatype='integer' name='emp_no' ordinal='2' />
+            <column datatype='date' name='from_date' ordinal='3' />
+            <column datatype='date' name='to_date' ordinal='4' />
+            <column datatype='integer' name='Year_of_Hiring' ordinal='5' />
+            <column datatype='integer' name='Active' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Task 2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dept_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dept_name]</local-name>
+            <parent-name>[Task 2.csv]</parent-name>
+            <remote-alias>dept_name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[Task 2.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>emp_no</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[emp_no]</local-name>
+            <parent-name>[Task 2.csv]</parent-name>
+            <remote-alias>emp_no</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>from_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[from_date]</local-name>
+            <parent-name>[Task 2.csv]</parent-name>
+            <remote-alias>from_date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>to_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[to_date]</local-name>
+            <parent-name>[Task 2.csv]</parent-name>
+            <remote-alias>to_date</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year_of_Hiring</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year_of_Hiring]</local-name>
+            <parent-name>[Task 2.csv]</parent-name>
+            <remote-alias>Year_of_Hiring</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Active</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Active]</local-name>
+            <parent-name>[Task 2.csv]</parent-name>
+            <remote-alias>Active</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Year of Hiring' datatype='integer' name='[Year_of_Hiring]' role='dimension' type='quantitative' />
+      <column caption='Dept Name' datatype='string' name='[dept_name]' role='dimension' type='nominal' />
+      <column caption='Emp No' datatype='integer' name='[emp_no]' role='measure' type='quantitative' />
+      <column caption='From Date' datatype='date' name='[from_date]' role='dimension' type='ordinal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='To Date' datatype='date' name='[to_date]' role='dimension' type='ordinal' />
+      <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.526718' measure-ordering='alphabetic' measure-percentage='0.473282' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Area Chart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='16'>Compare the number of male managers to the number of female managers from different departments for each year, starting from 1990</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Task 2' name='federated.0yglsdq1by9i3c1bewapk05m0l0v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yglsdq1by9i3c1bewapk05m0l0v'>
+            <column datatype='integer' name='[Active]' role='measure' type='quantitative' />
+            <column caption='Year of Hiring' datatype='integer' name='[Year_of_Hiring]' role='dimension' type='quantitative' />
+            <column-instance column='[Active]' derivation='Sum' name='[cum:sum:Active:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column caption='Dept Name' datatype='string' name='[dept_name]' role='dimension' type='nominal' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Year_of_Hiring]' derivation='None' name='[none:Year_of_Hiring:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[dept_name]' derivation='None' name='[none:dept_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0yglsdq1by9i3c1bewapk05m0l0v].[none:Year_of_Hiring:qk]' included-values='in-range'>
+            <min>1990</min>
+            <max>2000</max>
+          </filter>
+          <filter class='categorical' column='[federated.0yglsdq1by9i3c1bewapk05m0l0v].[none:dept_name:nk]'>
+            <groupfilter function='member' level='[none:dept_name:nk]' member='&quot;Sales&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <natural-sort column='[federated.0yglsdq1by9i3c1bewapk05m0l0v].[none:gender:nk]' direction='DESC' />
+          <slices>
+            <column>[federated.0yglsdq1by9i3c1bewapk05m0l0v].[none:dept_name:nk]</column>
+            <column>[federated.0yglsdq1by9i3c1bewapk05m0l0v].[none:Year_of_Hiring:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0yglsdq1by9i3c1bewapk05m0l0v].[none:Year_of_Hiring:qk]' scope='cols' value='Hiring Year' />
+            <format attr='title' class='0' field='[federated.0yglsdq1by9i3c1bewapk05m0l0v].[cum:sum:Active:qk]' scope='rows' value='Active Managers' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-color' scope='rows' value='#e6e6e6' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0yglsdq1by9i3c1bewapk05m0l0v].[none:gender:nk]' value='Gender' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0yglsdq1by9i3c1bewapk05m0l0v].[none:dept_name:nk]' value='Department Name' />
+            <format attr='title' field='[federated.0yglsdq1by9i3c1bewapk05m0l0v].[none:Year_of_Hiring:qk]' value='Hiring Year' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.0yglsdq1by9i3c1bewapk05m0l0v].[none:gender:nk]' />
+              <lod column='[federated.0yglsdq1by9i3c1bewapk05m0l0v].[none:gender:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0yglsdq1by9i3c1bewapk05m0l0v].[cum:sum:Active:qk]</rows>
+        <cols>[federated.0yglsdq1by9i3c1bewapk05m0l0v].[none:Year_of_Hiring:qk]</cols>
+      </table>
+      <simple-id uuid='{087004AC-D9B6-4488-89A8-76DBAC69E73D}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Area Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[federated.0yglsdq1by9i3c1bewapk05m0l0v].[none:gender:nk]' type='color' />
+            <card mode='radiolist' param='[federated.0yglsdq1by9i3c1bewapk05m0l0v].[none:dept_name:nk]' show-all='false' type='filter' />
+            <card param='[federated.0yglsdq1by9i3c1bewapk05m0l0v].[none:Year_of_Hiring:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0yglsdq1by9i3c1bewapk05m0l0v].[none:Year_of_Hiring:qk]</field>
+            <field>[federated.0yglsdq1by9i3c1bewapk05m0l0v].[none:dept_name:nk]</field>
+            <field>[federated.0yglsdq1by9i3c1bewapk05m0l0v].[none:gender:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{414424B1-ADD6-4518-B2DD-0D19614A4F8F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Area Chart' width='192'>
+      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
+      iwEgtf0/8BiKAgxZ/0EAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
